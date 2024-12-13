@@ -365,7 +365,7 @@ h2 {
 }
 @media (max-width:768px){
     .cell {
-        top: 60%; left: 50%;
+        top: 70%; left: 50%;
     }
     .imgs {
         grid-template-columns: 1fr; 
