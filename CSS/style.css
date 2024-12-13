@@ -364,6 +364,12 @@ h2 {
     }
 }
 @media (max-width:768px){
+    #first {
+        margin-top: calc(50vh - 260px);
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
     .imgs {
         grid-template-columns: 1fr; 
         gap: 1rem; 
@@ -401,15 +407,17 @@ h2 {
         margin: 2.5rem;
     }
     .main {
-        font-size: 22px;
-        margin-right: 1px;
-        margin-left: 1px;
+        font-size: 19px;
+        margin-right: 3px;
+        margin-left: 3px;
+        max-width: 100vw;
     }
     #first {
         font-size: 35px;
         margin-right: 0px;
         margin-left: 0px;
         text-align: center;
+        max-width: 100vw;
     }
     .h2-title {
         font-size: 19px;
@@ -420,6 +428,18 @@ h2 {
         font-size: 28px;
         margin-right: 0px;
         margin-left: 0px;
+        max-width: 100vw;
+    }
+    #sobre {
+        max-width: 100vw;
+    }
+    #sobre p {
+        margin-right: 10px;
+        margin-left: 10px;
+        max-width: 100vw;
+    }
+    #sobre img {
+        width: 100%;
     }
     .img-container {
     text-align: center; 
