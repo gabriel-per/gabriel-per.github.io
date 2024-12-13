@@ -364,6 +364,12 @@ h2 {
     }
 }
 @media (max-width:768px){
+    #first {
+        margin-top: calc(50vh - 210px);
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
     .cell {
         top: 70%; left: 50%;
     }
