@@ -200,6 +200,20 @@ body {
     background: white;
     border: 0px;
 }
+.blockthing {
+    position: fixed;
+  top: 290px; height: 60vh;
+  left: 0; 
+  right: 0;background-color: #f4f4f9;
+  transition: all 1s ease;
+}
+.notblockthing {
+    position: fixed;
+  top: 105vh; height: 60vh;
+  left: 0; 
+  right: 0;background-color: #f4f4f9;
+    transition: all 1s ease;
+}
 h2 {
     color: white;
     font-size: 30px;

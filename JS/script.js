@@ -12,12 +12,14 @@ window.onscroll = () =>{
 
 const cell = document.getElementById("morphingCell");
 const nucleus = document.getElementById("nuclei");
+const blockthing = document.getElementById("blockthing");
 
     window.addEventListener("scroll", () => {
       const scrollPos = window.scrollY / 3500;
 
       if (scrollPos < 0.2) {
         cell.className = "cell"; // Stem cell
+        blockthing.className = "blockthing"
       } else if (scrollPos < 0.4) {
         cell.className = "cell muscle-cell"; // Muscle cell
       } else if (scrollPos < 0.6) {
@@ -26,8 +28,10 @@ const nucleus = document.getElementById("nuclei");
         cell.className = "cell nerve-cell"; // Nerve cell
       } else if (scrollPos < 1) {
         cell.className = "cell adipose-cell"; // Adipose cell
+        blockthing.className = "blockthing"
       } else if (scrollPos >= 1 && scrollPos < 1.1) {
         cell.className = "cell skin-cell"; // Skin cell
+        blockthing.className = "notblockthing"
       } else {
         cell.className = "cell empty-cell";
       }
