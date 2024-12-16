@@ -380,7 +380,7 @@ h2 {
 
 .tooltip {
     position: fixed; /* Changed to fixed to follow mouse */
-    max-width: 30vw;
+    max-width: 40vw;
     padding: 12px 16px;
     background: white;
     color: #333;
@@ -401,6 +401,9 @@ h2 {
 /* Optional: Show on click for mobile devices */
 .cell:focus .tooltip {
     opacity: 1;
+}
+body:focus .tooltip {
+    opacity: 0;
 }
 @media (max-width:768px){
     .blockthing {
