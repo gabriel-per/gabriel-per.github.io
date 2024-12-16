@@ -73,8 +73,12 @@ cell.addEventListener('mousemove', (e) => {
       }
     });
     document.addEventListener('click', (event) => {
-        const focusedElement = document.querySelector('.cell:focus');
-        if (focusedElement) {
-            focusedElement.blur();
-        }
-      });
+      // Check if the click is outside the tooltip or the cell
+      if (!event.target.closest('.cell')) {
+          // Remove focus from any focused element
+          const focusedElement = document.querySelector('.cell:focus');
+          if (focusedElement) {
+              focusedElement.blur();
+          }
+      }
+  });
