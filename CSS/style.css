@@ -402,9 +402,7 @@ h2 {
 .cell:focus .tooltip {
     opacity: 1;
 }
-body:focus .tooltip {
-    opacity: 0;
-}
+
 @media (max-width:768px){
     .blockthing {
         position: fixed;

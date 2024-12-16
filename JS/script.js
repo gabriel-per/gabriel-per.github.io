@@ -72,3 +72,9 @@ cell.addEventListener('mousemove', (e) => {
         tooltip.innerText = "";
       }
     });
+    document.addEventListener('click', (event) => {
+        const focusedElement = document.querySelector('.cell:focus');
+        if (focusedElement) {
+            focusedElement.blur();
+        }
+      });
