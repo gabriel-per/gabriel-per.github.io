@@ -202,7 +202,7 @@ body {
 }
 .blockthing {
     position: fixed;
-  top: 290px; height: 60vh;
+  top: 34%; height: 66vh;
   left: 0; 
   right: 0;background-color: #f4f4f9;
   transition: all 1s ease;
@@ -378,6 +378,13 @@ h2 {
     }
 }
 @media (max-width:768px){
+    .blockthing {
+        position: fixed;
+      top: 40%; height: 60vh;
+      left: 0; 
+      right: 0;background-color: #f4f4f9;
+      transition: all 1s ease;
+    }
     #first {
         margin-top: calc(50vh - 220px);
         text-align: center;
