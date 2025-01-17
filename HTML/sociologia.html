@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sociologia</title>
+    <link rel="shortcut icon" href="../IMAGENS/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        p {
+            font-size: 16px;
+        }
+        ul, ol {
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo-title"><i class="fa-solid fa-fire"></i> Alô, sim?</a>
+        <nav class="navbar">
+            <a href="#">Voltar ao topo da página</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <section>
+        <img style="width: 100%; margin-top: 100px;" src="../IMAGENS/20230308_conceito-de-fundo-de-jornal.jpg" alt="Imagem">
+        <hr style="margin-top: 50px;">
+        <h2 style="margin-bottom: 5rem; margin-top: 50px;" class="section-title">O Perigo da Desinformação</h2>
+        <p>A desinformação, ou "fake news", é um problema que afeta todas as esferas da sociedade. Notícias falsas podem influenciar decisões políticas, prejudicar reputações e até colocar vidas em risco. Por exemplo:</p>
+        <ul>
+            <li><strong>Saúde:</strong> Durante a pandemia de COVID-19, informações falsas sobre tratamentos geraram confusão e aumentaram a desconfiança em relação às vacinas.</li>
+            <li><strong>Política:</strong> Eleições em diversos países foram marcadas por campanhas de desinformação que influenciaram eleitores.</li>
+        </ul>
+        <h3>Como identificar uma notícia falsa?</h3>
+        <ol>
+            <li><strong>Verifique a fonte:</strong> A notícia foi publicada por um veículo confiável?</li>
+            <li><strong>Cheque a data:</strong> Notícias antigas podem ser compartilhadas como se fossem atuais.</li>
+            <li><strong>Consulte outras fontes:</strong> Outros veículos estão falando sobre o mesmo tema?</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 style="margin-bottom: 5rem; margin-top: 5rem" class="section-title">Por Que Confiar na Mídia Oficial?</h2>
+        <p>Mídias oficiais seguem normas éticas e verificam informações antes de publicá-las. Jornalistas profissionais trabalham para garantir a veracidade dos fatos. Aqui estão algumas razões para priorizar essas fontes:</p>
+        <ol style="margin-bottom: 5rem;">
+            <li><strong>Responsabilidade:</strong> Veículos oficiais possuem compromisso com a verdade e podem ser responsabilizados legalmente.</li>
+            <li><strong>Credibilidade:</strong> Esses meios empregam profissionais capacitados para apurar informações.</li>
+            <li><strong>Segurança:</strong> As informações são protegidas contra manipulações e interferências externas.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 style="margin-bottom: 5rem; margin-top: 5rem" class="section-title">A Relação Entre Desinformação e Grupos Sociais</h2>
+        <p>A desinformação não afeta todos os grupos da mesma forma. Mulheres e jovens, por exemplo, são frequentemente alvos:</p>
+        <ul>
+            <li><strong>Mulheres:</strong> Campanhas de difamação e notícias falsas podem ser usadas para descredibilizar lideranças femininas.</li>
+            <li><strong>Jovens:</strong> Muitos jovens consomem notícias exclusivamente por redes sociais, o que os torna vulneráveis a conteúdos manipulados.</li>
+        </ul>
+        <h3>O Papel da Juventude na Luta Contra a Desinformação</h3>
+        <p style="margin-bottom: 5rem; margin-top: 2rem;">Os jovens têm um papel fundamental na disseminação de informações verdadeiras. Campanhas educativas em escolas e universidades podem ajudar a formar uma geração mais crítica e consciente.</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 style="margin-bottom: 5rem; margin-top: 5rem" class="section-title">Como Proteger-se da Desinformação?</h2>
+        <ol style="margin-bottom: 5rem;">
+            <li><strong>Eduque-se:</strong> Aprenda sobre como identificar fontes confiáveis.</li>
+            <li><strong>Duvide:</strong> Não compartilhe notícias sem antes confirmar sua veracidade.</li>
+            <li><strong>Priorize a mídia oficial:</strong> Confie em veículos conhecidos e respeitados.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 style="margin-bottom: 5rem; margin-top: 5rem" class="section-title">Conclusão</h2>
+        <p>A luta contra a desinformação exige esforço coletivo. Como cidadãos, temos a responsabilidade de buscar informações em fontes confiáveis e evitar a disseminação de conteúdos duvidosos. Mídias oficiais desempenham um papel crucial nesse cenário, oferecendo segurança, transparência e credibilidade.</p>
+        <p style="margin-bottom: 5rem;">Vamos juntos combater a desinformação e construir uma sociedade mais bem informada e consciente!</p>
+    </section>
+</article>
+<footer class="footer">
+    <p>Criado Por <b id="nome">Alô, sim?</b> | Todos os Direitos Reservados</p>
+    </footer>
+</footer>
+    <script src="../JS/script.js"></script>
+    <script>
+        let nomeArr = ["João Carneiro", "Samuel Augusto", "Gabriel Silva"];
+        let b = document.getElementById("nome");
+        let i = 0;
+        function altName() {
+            b.innerHTML = nomeArr[i%3];
+            i++;
+            setTimeout(altName, 1200);
+        }
+        altName();
+    </script>
+</body>
+</html>
